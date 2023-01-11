@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>18 Mirrors</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./static//webbicon.svg">
+        <link rel="stylesheet" href="./static/index.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="main_container">
+                <div class="main_hero"> 
+                    <div class="main_left_body">
+                        <div class="main_bottom">
+                            <div class="latest_images_container black_bg">
+                                <!-- replace href with jinja link after -->
+                                <a class="nasa_a" id="latest_images_a" href="{{link}}" target="_blank">LATEST IMAGES</a>
+                            </div>
+                            <div class="latest_images_container black_bg">
+                                <!-- replace href with jinja link after -->
+                                <a class="nasa_a" id="download_images_a" href="https://webbtelescope.org/resource-gallery/images" target="_blank">DOWNLOAD HI-RES IMAGES</a>
+                            </div>
+                        </div>
+                    
+                        <div class="main_updates">
+                            <div class="update_iframe" id="twitter_iframe">
+                                <script async src="script.js"></script><a class="twitter-timeline" data-height="100%" data-width="90%" data-theme="dark" href="https://twitter.com/NASAWebb?ref_src=twsrc%5Etfw">Tweets by NASAWebb</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="main_mid_container">
+                        <a class="main_icon black_bg" href="https://www.jwst.nasa.gov/index.html" target="_blank">
+                            <div class="main_icon_text">
+                                JAMES WEBB
+                            </div>
+                            <img class="main_icon_img" src="./static/webbicon.svg">
+                            <div class="main_icon_text">
+                                SPACE TELESCOPE
+                            </div>
+                        </a>
+                        <div class="main_nav_container" >
+                            <nav class="main_nav">
+                                <div class="indiv_nav black_bg">
+                                    <a class="nasa_a" id="images_a" href="https://www.flickr.com/photos/nasawebbtelescope/albums/" target="_blank">ALL IMAGES</a>
+                                </div>
+                                <div class="indiv_nav black_bg">
+                                    <a class="nasa_a" id="news_a" href="https://www.jwst.nasa.gov/content/webbLaunch/news.html" target="_blank">NEWS</a>
+                                </div>
+                                <div class="indiv_nav black_bg">
+                                    <a class="nasa_a" id="youtube_a" href="https://www.youtube.com/user/NASAWebbTelescope" target="_blank">YOUTUBE</a>
+                                </div>
+                                <div class="indiv_nav black_bg">
+                                    <a class="nasa_a" id="blog_a" href="https://blogs.nasa.gov/webb/" target="_blank">BLOG</a>
+                                </div>
+                                <div class="indiv_nav black_bg">
+                                    <a class="nasa_a" id="reddit_a" href="https://www.reddit.com/r/jameswebb/" target="_blank">REDDIT</a>
+                                </div>
+                                <div class="indiv_nav black_bg">
+                                    <a class="nasa_a" id="about_a" href="https://www.jwst.nasa.gov/content/webbLaunch/needToKnow.html" target="_blank">ABOUT JWST</a>
+                                </div>
+                            </nav>
+                        </div>
+                    
+                        
+                    </div>
+                    <div class="main_body">
+                        <div class="main_livestream_container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/21X5lGlDOfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="latest_news_container black_bg">
+                            <div class="latest_news_title">
+                                LATEST NEWS
+                            </div>
+                            <div class="news_articles">
+                                {% for post in news %}
+                                    <div class="news_container">
+                                        <div class="news_date">
+                                            {{post['news_date']}}
+                                        </div>
+                                        <a class="news_title" href="{{post['news_href']}}">
+                                            {{post['news_title']}}
+                                        </a>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                        
+                
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

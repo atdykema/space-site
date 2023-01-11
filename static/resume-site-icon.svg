@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="125mm"
+   height="125mm"
+   viewBox="0 0 125 125"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
+   sodipodi:docname="resume-site-icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.2102413"
+     inkscape:cx="-16.647538"
+     inkscape:cy="-173.61004"
+     inkscape:window-width="1680"
+     inkscape:window-height="903"
+     inkscape:window-x="10"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-237.5,-237.5)">
+    <g
+       id="g520">
+      <rect
+         style="opacity:0.5;fill:#800080;fill-opacity:0.906736;stroke-width:0.398367"
+         id="rect344-9-8-4"
+         width="125"
+         height="125"
+         x="237.5"
+         y="237.5" />
+      <rect
+         style="opacity:0.25;fill:#ff00ff;fill-opacity:0.906736;stroke-width:0.318693"
+         id="rect344-9-8"
+         width="100"
+         height="100"
+         x="250"
+         y="250" />
+    </g>
+    <circle
+       style="opacity:0.25;fill:#ffffff;fill-opacity:0.906736;stroke-width:0.224988"
+       id="path516"
+       cx="297.5"
+       cy="297.5"
+       r="25" />
+    <ellipse
+       style="opacity:0.25;fill:#ffffff;fill-opacity:0.906736;stroke-width:0.318181"
+       id="path516-0"
+       cx="300"
+       cy="362.5"
+       rx="50"
+       ry="25" />
+  </g>
+</svg>

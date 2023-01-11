@@ -1,0 +1,61 @@
+@font-face{
+    font-family: main-font;
+    src:url(/static/zerohour/zerohour.otf)
+}
+
+@font-face{
+    font-family: display-font;
+    src:url(/static/Exan-Regular.ttf)
+}
+
+*{
+    font-family: display-font;
+    font-size: 62.5%;
+    color: whitesmoke;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+body{
+    background-color: black;
+}
+
+.loading_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    width: 100%;
+}
+
+#loading_msg{
+    font-size: 2rem;
+    opacity: 25%;
+    margin: 2%;
+    text-align: center;
+    overflow-wrap: anywhere;
+    transition: .3s;
+}
+
+#loading_msg:hover{
+    opacity: 75%;
+}
+
+@media only screen and (max-width: 600px) {
+    #loading_msg{
+        font-size: 2rem;
+        opacity: 75%;
+        margin: 2%;
+        text-align: center;
+        overflow-wrap: anywhere;
+        transition: .3s;
+    }
+
+}

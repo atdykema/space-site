@@ -1,0 +1,161 @@
+@font-face{
+    font-family: main-font;
+    src:url(/static/zerohour/zerohour.otf)
+}
+
+*{
+    font-family: main-font;
+    font-size: 62.5%;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+
+body{
+    background-color: black;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    transition: .5s;
+}
+
+a:hover{
+    color: rgb(60, 60, 60);
+}
+
+.main_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10em;
+    margin: 2%;
+    padding: 2%;
+    height: 15vh;
+}
+
+.main_image_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.image_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 33%;
+    margin: 2%;
+    object-fit: contain;
+
+}
+
+.indiv_image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.image_href{
+    width: 100%;
+    transition: 1s;
+}
+
+.image_href:hover{
+    width: 80vw;
+}
+
+.image_cap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    font-size: 30em;
+    opacity: 25%;
+    margin: 2%;
+    padding: 5%;
+    transition: .5s;
+    height: 40%;
+
+    width: 90vh;
+    overflow-wrap: anywhere;
+    opacity: 0%;
+}
+
+.indiv_image:hover > .image_cap{
+    opacity: 100%;
+    transition: .5s;
+}
+
+.image_cap:hover{
+    opacity: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .main_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .main_title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10em;
+        margin: 2%;
+        padding: 2%;
+        height: 90vh;
+    }
+    
+    .image_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        min-height: 90vh;
+        margin: 10%;
+        object-fit: contain;
+    
+    }
+    
+    .indiv_image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        object-fit: contain;
+    }
+    
+    .image_href{
+        width: 100%;
+    }
+
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>18 Mirrors: Fetching content...</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./static//webbicon.svg">
+        <link rel="stylesheet" href="./static/fetching.css">
+        
+    </head>
+    
+    <body>
+       <div class="loading_container">
+        <img src="/static/loading.gif">
+        <div id="loading_msg">
+            
+        </div>
+        {% if var == "latest_images" %}
+            <a class="flickr_link" href="https://www.flickr.com/photos/nasawebbtelescope/albums/" target="_blank">
+                Not loading? View all JWST images directly at Flickr.com
+            </a>
+        {% endif %}
+       </div>
+    </body>
+
+    <script>
+
+        let num = Math.floor(Math.random() * 4)
+        console.log(num)
+        if(num == 0){
+            document.getElementById('loading_msg').innerHTML = 'to search for the first stars and galaxies to exist in the universe...'
+        }else if(num == 1){
+            document.getElementById('loading_msg').innerHTML = 'to study galaxy formation and evolution...'
+        }
+        else if(num == 2){
+            document.getElementById('loading_msg').innerHTML = 'to understand star and planet formation...'
+        }
+        else if(num == 3){
+            document.getElementById('loading_msg').innerHTML = 'to uncover planetary systems and the origins of life...'
+        }
+
+        window.location.replace('/{{var}}');
+    </script>
+    
+</html>

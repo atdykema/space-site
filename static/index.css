@@ -1,0 +1,485 @@
+@font-face{
+    font-family: main-font;
+    src:url(/static/zerohour/zerohour.otf)
+}
+
+@font-face{
+    font-family: display-font;
+    src:url(/static/Exan-Regular.ttf)
+}
+
+*{
+    font-family: main-font;
+    font-size: 62.5%;
+    color: whitesmoke;
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    transition: .5s;
+}
+
+a:hover{
+    color: rgb(212, 175, 55);
+    
+}
+
+.container{
+    background-image: url(./bigwebb.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+@keyframes breath {
+   
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+.main_container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.main_hero{
+    display: flex;
+    flex-direction: row;
+
+    margin: 3%;
+    height: 90%;
+    justify-content: space-evenly;
+}
+
+.main_bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 100%;
+}
+
+.main_nav{
+    display: flex;
+    flex-direction: column;
+    font-size: 10em;
+    color: whitesmoke;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.main_icon{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    align-items: center;
+    justify-content: space-evenly;
+    color: whitesmoke;
+    width: 70%;
+    height: 20%;
+    padding: 2%;
+    margin: 4%;
+    transition: .5s;
+}
+
+
+.main_icon_text{
+    font-size: 35em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0%;
+    margin: 2%;
+    transition: .3s;
+}
+
+
+
+.main_icon:hover > .main_icon_text{
+    opacity: 100%;
+}
+
+.main_icon_img{
+    width: 50%;
+    height: 50%;
+    z-index: 0;
+
+}
+.nasa_a{
+    color: whitesmoke;
+    transition: .5s;
+    font-size: 5em;
+    margin: 2%;
+    padding: 4%;
+
+}
+
+
+.main_body{
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+    margin: 0%;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.main_livestream_container{
+    position: relative;
+    width: 100%;
+    height: 0;
+    margin: 5%;
+}
+
+.main_livestream_container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 75%;
+}
+
+.main_left_body{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+  
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main_nav_container{
+    display: flex;
+    flex-direction: row;
+   
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+}
+
+.latest_images_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 90%;
+    font-size: 10em;
+    height: 100%;
+    text-align: center;
+    overflow-wrap: anywhere;
+
+}
+
+.latest_news_title{
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-wrap: anywhere;
+    margin: 2%;
+    padding-top: 5%;
+    transition: .3s;
+}
+
+.news_date{
+    opacity: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-wrap: anywhere;
+    font-family: display-font;
+}
+
+.news_title{
+    padding: 2%;
+    margin: 2%;
+    font-family: display-font;
+}
+
+.main_updates{
+    display: flex;
+    flex-direction: row;
+   
+    width: 100%;
+    height: 60%;
+}
+
+.update_iframe{
+    margin: 2%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reddit_iframe{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.twitter_iframe{
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+    width: 100%;
+    
+}
+
+#twitter-widget-0{
+    opacity: 75%;
+    transition: .3s;
+    width: 100%;
+}
+
+#twitter-widget-0:hover{
+    opacity: 100%;
+}
+
+
+.main_mid_container{
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.black_bg{
+    opacity: 50%;
+    transition: .3s;
+    border: 3px solid rgba(212, 175, 55, 0.0);
+    background-color: rgba(0,0,0,0.5);
+}
+
+.black_bg:hover{
+    border: 3px solid rgb(212, 175, 55, 0.5);
+    opacity: 100%;
+    background-image: url('webbiconlight.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.indiv_nav{
+    padding: 5%;
+    width: 80%;
+}
+
+.indiv_nav:hover{
+    width: 100%;
+}
+
+#twitter-widget-0:hover{
+    opacity: 75%;
+    background-image: url('webbiconlight.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.video-container {
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+
+.latest_news_container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 50%;
+    padding: 2%;
+    overflow-wrap: anywhere;
+}
+
+.main_livestream_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.main_body:hover > .latest_news_title{
+    color:rgb(212, 175, 55)
+}
+
+.news_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2%;
+    padding: 2%;
+    overflow-wrap: anywhere;
+    
+}
+
+.news_articles{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    margin: 2%;
+    padding: 5%;
+    font-size: 5rem;
+    overflow-wrap: anywhere;
+    overflow-y: scroll;
+}
+
+@media only screen and (max-width: 1250px) {
+
+    *{
+        overflow: visible;
+    }
+
+    body{
+        background-image: url(./webbiconlighttexturebg.svg);
+        background-repeat: repeat;
+    }
+
+    .container{
+        background: radial-gradient(rgba(0,0,0,0.0), rgb(0,0,0));
+    }
+
+    .main_container{
+        overflow-x: hidden;
+        margin: 2%;
+
+    }
+
+    .indiv_nav{
+        margin: 2%;
+    }
+
+    .black_bg{
+        border: 3px solid rgb(212, 175, 55, 0.5);
+        opacity: 100%;
+    }
+
+    .main_hero{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .main_left_body{
+        width: 100%;
+        height: fit-content;
+        overflow: visible;
+        margin: 2%;
+    }
+
+    .main_body{
+        width: 80%;
+        height: fit-content;
+        overflow: visible;
+        margin: 5%;
+        padding: 5%;
+    }
+
+    .main_mid_container{
+        width: 100%;
+        height: fit-content;
+        overflow: visible;
+
+    }
+
+    .news_title{
+        font-size: 2rem;
+    }
+
+    .news_date{
+        font-size: 2rem;
+    }
+    
+    #twitter-widget-0{
+        opacity: 100%;
+    }
+    
+    .black_bg{
+        opacity: 100%;
+        background-size: cover;
+    }
+
+    .main_updates{
+        margin: 5%;
+        min-height: 50vh;
+    }
+
+    .main_icon_text{
+        display: none;
+    }
+
+    .main_icon:hover{
+        height: 30%;
+    }
+
+    .main_icon_img{
+
+        width: 100%;
+        height: 100%;
+    }
+
+
+  }
